@@ -1,15 +1,50 @@
 :- module(interface, [read_answers/1, print_answers/1]).
 :- use_module(variables).
 
-read_answers([Price, Popularity]) :-
-	read_wealth(Price),
-	read_popularity(Popularity).
+read_answers([Cost, Res, Availability, Age, Popularity, Dangereous, Size]) :-
+	read_cost(Cost),
+	read_res(Res),
+	read_age(Age),
+	read_availability(Availability),
+	read_popularity(Popularity),
+	read_danger(Dangereous),
+	read_size(Size).
 
-read_wealth(Price) :- 
+read_res(Res) :- 
+    format('~nJaki jest wiek obdarowywanej osoby?~n'),
+    ageres_list(Res_list),
+	print_variables(Res_list),
+	read(Res).
+
+read_availability(Availability) :- 
+    format('~nJak duzo czasu mamy by kupic podarek?~n'),
+    availability_list(Availability_list),
+	print_variables(Availability_list),
+	read(Availability).
+
+read_age(Age) :- 
+    format('~nJak bardzo dana osoba lubi retro podarki?~n'),
+    age_list(Age_list),
+	print_variables(Age_list),
+	read(Age).
+
+read_danger(Danger) :- 
+    format('~nJak bezpieczny ma byc podarek?~n'),
+    dangereous_list(Dangereous_list),
+	print_variables(Dangereous_list),
+	read(Danger).
+
+read_size(Size) :- 
+    format('~nJakich rozmiarow ma byc podarek?~n'),
+    size_list(Size_list),
+	print_variables(Size_list),
+	read(Size).
+
+read_cost(Cost) :- 
     format('~nW jakim przedziale cenowym ma byc Podarek?~n'),
-    wealth_list(Prices_list),
-	print_variables(Prices_list),
-	read(Price).
+    cost_list(Costs_list),
+	print_variables(Costs_list),
+	read(Cost).
 
 read_popularity(Popularity) :- 
 	format('~nJak popularny ma byc podarek?~n'),

@@ -1,4 +1,4 @@
-% baza danych------------------------------------------------
+:- dynamic name/2.
 name('Call Of Duty Black Ops').
 name('Pluszwoy Miś Ben').
 name('GTA 3').
@@ -18,7 +18,6 @@ cost('Pluszwoy Miś Ben',30).
 cost('GTA 3',100).
 cost('Lizak o samku Coli',3).
 cost('HotWeels',4).
-cost(marek,4).
 
 :- dynamic ageRestriction/2.
 ageRestriction('Call Of Duty Black Ops',18).
@@ -62,12 +61,12 @@ isCooperative('GTA 3',0).
 isCooperative('Lizak o samku Coli',0).
 isCooperative('HotWeels',1).
 
-:- dynamic isDangereous/2.
-isDangereous('Call Of Duty Black Ops',0).
-isDangereous('Pluszwoy Miś Ben',0).
-isDangereous('GTA 3',0).
-isDangereous('Lizak o samku Coli',0).
-isDangereous('HotWeels',0).
+:- dynamic dangereous/2.
+dangereous('Call Of Duty Black Ops',0).
+dangereous('Pluszwoy Miś Ben',0).
+dangereous('GTA 3',0).
+dangereous('Lizak o samku Coli',0).
+dangereous('HotWeels',0).
 
 :- dynamic size/2.
 size('Call Of Duty Black Ops',0).
