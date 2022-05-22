@@ -1,4 +1,4 @@
-recommender_menu ::- module(app, [main/0]).
+:- module(app, [recommender_menu/0]).
 
 :- use_module(interface).
 :- use_module(recommendation).
