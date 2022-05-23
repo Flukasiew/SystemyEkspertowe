@@ -1,168 +1,168 @@
 % baza danych------------------------------------------------
-name('Call Of Duty Black Ops').
-name('Pluszwoy Miś Ben').
-name('GTA 3').
-name('Lizak o samku Coli').
+name('Call_Of_Duty_Black_Ops').
+name('Pluszwoy_Mis_Ben').
+name('GTA_3').
+name('Lizak_o_samku_Coli').
 name('HotWeels').
-name('Tabliczka Czekolady').
-name('Chińska podróbka HotWeels').
-name('Pluszowa Lalka Lola').
-name('Bilet na koncert Metalici').
-name('Vocher na FlySpot').
+name('Tabliczka_Czekolady').
+name('Chinska_podróbka_HotWeels').
+name('Pluszowa_Lalka_Lola').
+name('Bilet_na_koncert_Metalici').
+name('Vocher_na_FlySpot').
 name('FIFA-09').
-name('Wakacje na Karaibach').
+name('Wakacje_na_Karaibach').
 name('Kebab').
-name('DND 5e Podręcznik Gracza').
+name('DND_5e_Podręcznik_Gracza').
 
-class('Call Of Duty Black Ops','gra').
-class('Pluszwoy Miś Ben','pluszak').
-class('GTA 3','gra').
-class('Lizak o samku Coli','jedzenie').
+class('Call_Of_Duty_Black_Ops','gra').
+class('Pluszwoy_Mis_Ben','pluszak').
+class('GTA_3','gra').
+class('Lizak_o_samku_Coli','jedzenie').
 class('HotWeels','samochodzik').
-class('Tabliczka Czekolady','jedzenie').
-class('Chińska podróbka HotWeels','samochodzik').
-class('Pluszowa Lalka Lola','pluszak').
-class('Bilet na koncert Metalici','wydarzenie').
-class('Vocher na FlySpot','wydarzenie').
+class('Tabliczka_Czekolady','jedzenie').
+class('Chinska_podróbka_HotWeels','samochodzik').
+class('Pluszowa_Lalka_Lola','pluszak').
+class('Bilet_na_koncert_Metalici','wydarzenie').
+class('Vocher_na_FlySpot','wydarzenie').
 class('FIFA-09','gra').
-class('Wakacje na Karaibach','wydarzenie').
+class('Wakacje_na_Karaibach','wydarzenie').
 class('Kebab','jedzenie').
-class('DND 5e Podręcznik Gracza','gra').
+class('DND_5e_Podręcznik_Gracza','gra').
 
-cost('Call Of Duty Black Ops',100).
-cost('Pluszwoy Miś Ben',30).
-cost('GTA 3',100).
-cost('Lizak o samku Coli',3).
+cost('Call_Of_Duty_Black_Ops',100).
+cost('Pluszwoy_Mis_Ben',30).
+cost('GTA_3',100).
+cost('Lizak_o_samku_Coli',3).
 cost('HotWeels',4).
-cost('Tabliczka Czekolady',4).
-cost('Chińska podróbka HotWeels',2).
-cost('Pluszowa Lalka Lola',100).
-cost('Bilet na koncert Metalici',100).
-cost('Vocher na FlySpot',100).
+cost('Tabliczka_Czekolady',4).
+cost('Chinska_podróbka_HotWeels',2).
+cost('Pluszowa_Lalka_Lola',100).
+cost('Bilet_na_koncert_Metalici',100).
+cost('Vocher_na_FlySpot',100).
 cost('FIFA-09',30).
-cost('Wakacje na Karaibach',5000).
+cost('Wakacje_na_Karaibach',5000).
 cost('Kebab',30).
-cost('DND 5e Podręcznik Gracza',100).
+cost('DND_5e_Podręcznik_Gracza',100).
 
-ageRestriction('Call Of Duty Black Ops',18).
-ageRestriction('Pluszwoy Miś Ben',0).
-ageRestriction('GTA 3',18).
-ageRestriction('Lizak o samku Coli',3).
+ageRestriction('Call_Of_Duty_Black_Ops',18).
+ageRestriction('Pluszwoy_Mis_Ben',0).
+ageRestriction('GTA_3',18).
+ageRestriction('Lizak_o_samku_Coli',3).
 ageRestriction('HotWeels',3).
-ageRestriction('Tabliczka Czekolady',0).
-ageRestriction('Chińska podróbka HotWeels',3).
-ageRestriction('Pluszowa Lalka Lola',0).
-ageRestriction('Bilet na koncert Metalici',16).
-ageRestriction('Vocher na FlySpot',12).
+ageRestriction('Tabliczka_Czekolady',0).
+ageRestriction('Chinska_podróbka_HotWeels',3).
+ageRestriction('Pluszowa_Lalka_Lola',0).
+ageRestriction('Bilet_na_koncert_Metalici',16).
+ageRestriction('Vocher_na_FlySpot',12).
 ageRestriction('FIFA-09',3).
-ageRestriction('Wakacje na Karaibach',0).
+ageRestriction('Wakacje_na_Karaibach',0).
 ageRestriction('Kebab',0).
-ageRestriction('DND 5e Podręcznik Gracza',0).
+ageRestriction('DND_5e_Podręcznik_Gracza',0).
 
-availability('Call Of Duty Black Ops',0).
-availability('Pluszwoy Miś Ben',10).
-availability('GTA 3',0).
-availability('Lizak o samku Coli',0).
+availability('Call_Of_Duty_Black_Ops',0).
+availability('Pluszwoy_Mis_Ben',10).
+availability('GTA_3',0).
+availability('Lizak_o_samku_Coli',0).
 availability('HotWeels',1).
-availability('Tabliczka Czekolady',0).
-availability('Chińska podróbka HotWeels',30).
-availability('Pluszowa Lalka Lola',10).
-availability('Bilet na koncert Metalici',0).
-availability('Vocher na FlySpot',0).
+availability('Tabliczka_Czekolady',0).
+availability('Chinska_podróbka_HotWeels',30).
+availability('Pluszowa_Lalka_Lola',10).
+availability('Bilet_na_koncert_Metalici',0).
+availability('Vocher_na_FlySpot',0).
 availability('FIFA-09',10).
-availability('Wakacje na Karaibach',0).
+availability('Wakacje_na_Karaibach',0).
 availability('Kebab',0).
-availability('DND 5e Podręcznik Gracza',10).
+availability('DND_5e_Podręcznik_Gracza',10).
 
-age('Call Of Duty Black Ops',10).
-age('Pluszwoy Miś Ben',2).
-age('GTA 3',15).
-age('Lizak o samku Coli',0).
+age('Call_Of_Duty_Black_Ops',10).
+age('Pluszwoy_Mis_Ben',2).
+age('GTA_3',15).
+age('Lizak_o_samku_Coli',0).
 age('HotWeels',2).
-age('Tabliczka Czekolady',0).
-age('Chińska podróbka HotWeels',3).
-age('Pluszowa Lalka Lola',6).
-age('Bilet na koncert Metalici',0).
-age('Vocher na FlySpot',0).
+age('Tabliczka_Czekolady',0).
+age('Chinska_podróbka_HotWeels',3).
+age('Pluszowa_Lalka_Lola',6).
+age('Bilet_na_koncert_Metalici',0).
+age('Vocher_na_FlySpot',0).
 age('FIFA-09',13).
-age('Wakacje na Karaibach',0).
+age('Wakacje_na_Karaibach',0).
 age('Kebab',0).
-age('DND 5e Podręcznik Gracza',10).
+age('DND_5e_Podręcznik_Gracza',10).
 
-popularity('Call Of Duty Black Ops',7).
-popularity('Pluszwoy Miś Ben',7).
-popularity('GTA 3',10).
-popularity('Lizak o samku Coli',5).
+popularity('Call_Of_Duty_Black_Ops',7).
+popularity('Pluszwoy_Mis_Ben',7).
+popularity('GTA_3',10).
+popularity('Lizak_o_samku_Coli',5).
 popularity('HotWeels',5).
-popularity('Tabliczka Czekolady',7).
-popularity('Chińska podróbka HotWeels',5).
-popularity('Pluszowa Lalka Lola',5).
-popularity('Bilet na koncert Metalici',10).
-popularity('Vocher na FlySpot',7).
+popularity('Tabliczka_Czekolady',7).
+popularity('Chinska_podróbka_HotWeels',5).
+popularity('Pluszowa_Lalka_Lola',5).
+popularity('Bilet_na_koncert_Metalici',10).
+popularity('Vocher_na_FlySpot',7).
 popularity('FIFA-09',7).
-popularity('Wakacje na Karaibach',5).
+popularity('Wakacje_na_Karaibach',5).
 popularity('Kebab',5).
-popularity('DND 5e Podręcznik Gracza',10).
+popularity('DND_5e_Podręcznik_Gracza',10).
 
-isDigital('Call Of Duty Black Ops',1).
-isDigital('Pluszwoy Miś Ben',0).
-isDigital('GTA 3',1).
-isDigital('Lizak o samku Coli',0).
+isDigital('Call_Of_Duty_Black_Ops',1).
+isDigital('Pluszwoy_Mis_Ben',0).
+isDigital('GTA_3',1).
+isDigital('Lizak_o_samku_Coli',0).
 isDigital('HotWeels',0).
-isDigital('Tabliczka Czekolady',0).
-isDigital('Chińska podróbka HotWeels',0).
-isDigital('Pluszowa Lalka Lola',0).
-isDigital('Bilet na koncert Metalici',1).
-isDigital('Vocher na FlySpot',1).
+isDigital('Tabliczka_Czekolady',0).
+isDigital('Chinska_podróbka_HotWeels',0).
+isDigital('Pluszowa_Lalka_Lola',0).
+isDigital('Bilet_na_koncert_Metalici',1).
+isDigital('Vocher_na_FlySpot',1).
 isDigital('FIFA-09',1).
-isDigital('Wakacje na Karaibach',1).
+isDigital('Wakacje_na_Karaibach',1).
 isDigital('Kebab',0).
-isDigital('DND 5e Podręcznik Gracza',0).
+isDigital('DND_5e_Podręcznik_Gracza',0).
 
-isCooperative('Call Of Duty Black Ops',1).
-isCooperative('Pluszwoy Miś Ben',0).
-isCooperative('GTA 3',0).
-isCooperative('Lizak o samku Coli',0).
+isCooperative('Call_Of_Duty_Black_Ops',1).
+isCooperative('Pluszwoy_Mis_Ben',0).
+isCooperative('GTA_3',0).
+isCooperative('Lizak_o_samku_Coli',0).
 isCooperative('HotWeels',1).
-isCooperative('Tabliczka Czekolady',0).
-isCooperative('Chińska podróbka HotWeels',0).
-isCooperative('Pluszowa Lalka Lola',0).
-isCooperative('Bilet na koncert Metalici',1).
-isCooperative('Vocher na FlySpot',0).
+isCooperative('Tabliczka_Czekolady',0).
+isCooperative('Chinska_podróbka_HotWeels',0).
+isCooperative('Pluszowa_Lalka_Lola',0).
+isCooperative('Bilet_na_koncert_Metalici',1).
+isCooperative('Vocher_na_FlySpot',0).
 isCooperative('FIFA-09',1).
-isCooperative('Wakacje na Karaibach',1).
+isCooperative('Wakacje_na_Karaibach',1).
 isCooperative('Kebab',0).
-isCooperative('DND 5e Podręcznik Gracza',1).
+isCooperative('DND_5e_Podręcznik_Gracza',1).
 
-isDangereous('Call Of Duty Black Ops',0).
-isDangereous('Pluszwoy Miś Ben',0).
-isDangereous('GTA 3',0).
-isDangereous('Lizak o samku Coli',0).
-isDangereous('HotWeels',0).
-isDangereous('Tabliczka Czekolady',0).
-isDangereous('Chińska podróbka HotWeels',1).
-isDangereous('Pluszowa Lalka Lola',0).
-isDangereous('Bilet na koncert Metalici',0).
-isDangereous('Vocher na FlySpot',0).
-isDangereous('FIFA-09',0).
-isDangereous('Wakacje na Karaibach',1).
-isDangereous('Kebab',0).
-isDangereous('DND 5e Podręcznik Gracza',0).
+dangereous('Call_Of_Duty_Black_Ops',0).
+dangereous('Pluszwoy_Mis_Ben',0).
+dangereous('GTA_3',0).
+dangereous('Lizak_o_samku_Coli',0).
+dangereous('HotWeels',0).
+dangereous('Tabliczka_Czekolady',0).
+dangereous('Chinska_podróbka_HotWeels',1).
+dangereous('Pluszowa_Lalka_Lola',0).
+dangereous('Bilet_na_koncert_Metalici',0).
+dangereous('Vocher_na_FlySpot',0).
+dangereous('FIFA-09',0).
+dangereous('Wakacje_na_Karaibach',1).
+dangereous('Kebab',0).
+dangereous('DND_5e_Podręcznik_Gracza',0).
 
-size('Call Of Duty Black Ops',0).
-size('Pluszwoy Miś Ben',0).
-size('GTA 3',0).
-size('Lizak o samku Coli',0).
+size('Call_Of_Duty_Black_Ops',0).
+size('Pluszwoy_Mis_Ben',0).
+size('GTA_3',0).
+size('Lizak_o_samku_Coli',0).
 size('HotWeels',0).
-size('Tabliczka Czekolady',0).
-size('Chińska podróbka HotWeels',0).
-size('Pluszowa Lalka Lola',1).
-size('Bilet na koncert Metalici',0).
-size('Vocher na FlySpot',0).
+size('Tabliczka_Czekolady',0).
+size('Chinska_podróbka_HotWeels',0).
+size('Pluszowa_Lalka_Lola',1).
+size('Bilet_na_koncert_Metalici',0).
+size('Vocher_na_FlySpot',0).
 size('FIFA-09',0).
-size('Wakacje na Karaibach',0).
+size('Wakacje_na_Karaibach',0).
 size('Kebab',0).
-size('DND 5e Podręcznik Gracza',0).
+size('DND_5e_Podręcznik_Gracza',0).
 
 
 %funkcje --------------------------------------------------------
@@ -186,14 +186,14 @@ scop(X,Y):-
 	add_tail(ROZ,'isCooperative',ROZR),
 	nb_setval('ROZ',ROZR).
 
-sameIsDangereous(I1,I2) :-
-	isDangereous(I1,X),
-	isDangereous(I2,Y),
+samedangereous(I1,I2) :-
+	dangereous(I1,X),
+	dangereous(I2,Y),
 	sden(X,Y).
 sden(X,X).
 sden(X,Y):-
 	nb_getval('ROZ',ROZ),
-	add_tail(ROZ,'isDangereous',ROZR),
+	add_tail(ROZ,'dangereous',ROZR),
 	nb_setval('ROZ',ROZR).
 
 sameSize(I1,I2) :-
@@ -288,7 +288,7 @@ iter2ForClass(CLASS,[Head|Tail],I2):-
 	sameAgeRestriction(I2,Head),
 	sameAvailability(I2,Head),
 	sameIsCooperative(I2,Head),
-	sameIsDangereous(I2,Head),
+	samedangereous(I2,Head),
 	sameIsDigital(I2,Head),
 	samePopularity(I2,Head),
 	sameSize(I2,Head),
@@ -310,7 +310,7 @@ iter2ForClassR(CLASS,[Head|Tail],I2):-
 	sameAgeRestriction(I2,Head),
 	sameAvailability(I2,Head),
 	sameIsCooperative(I2,Head),
-	sameIsDangereous(I2,Head),
+	samedangereous(I2,Head),
 	sameIsDigital(I2,Head),
 	samePopularity(I2,Head),
 	sameSize(I2,Head),
@@ -345,7 +345,7 @@ iter2([Head|Tail],I2):-
 	sameAvailability(I2,Head),
 	sameClass(I2,Head),
 	sameIsCooperative(I2,Head),
-	sameIsDangereous(I2,Head),
+	samedangereous(I2,Head),
 	sameIsDigital(I2,Head),
 	samePopularity(I2,Head),
 	sameSize(I2,Head),
@@ -433,8 +433,8 @@ deleteFromROZ2(X):-
 %-------------------------------------------------------------------
 init():-
 	nb_setval('REDUKT',[]),
-	nb_setval('CECHY',['age','cost','isDigital','isCooperative','isDangereous','size','popularity','class','ageRestriction','availability']),
-	nb_setval('PK',['DND 5e Podręcznik Gracza','Kebab','Wakacje na Karaibach','FIFA-09','Vocher na FlySpot','Bilet na koncert Metalici','Pluszowa Lalka Lola','Chińska podróbka HotWeels','Tabliczka Czekolady','Lizak o samku Coli','GTA 3','HotWeels','Pluszwoy Miś Ben','Call Of Duty Black Ops']).
+	nb_setval('CECHY',['age','cost','isDigital','isCooperative','dangereous','size','popularity','class','ageRestriction','availability']),
+	nb_setval('PK',['DND_5e_Podręcznik_Gracza','Kebab','Wakacje_na_Karaibach','FIFA-09','Vocher_na_FlySpot','Bilet_na_koncert_Metalici','Pluszowa_Lalka_Lola','Chinska_podróbka_HotWeels','Tabliczka_Czekolady','Lizak_o_samku_Coli','GTA_3','HotWeels','Pluszwoy_Mis_Ben','Call_Of_Duty_Black_Ops']).
 
 makeRedukt():-
 	init(),
@@ -461,8 +461,8 @@ saveInRedukt(X):-
 %------------------------------------
 initForClass():-
 	nb_setval('REDUKT',[]),
-	nb_setval('CECHY',['age','cost','isDigital','isCooperative','isDangereous','size','popularity','ageRestriction','availability']),
-	nb_setval('PK',['DND 5e Podręcznik Gracza','Kebab','Wakacje na Karaibach','FIFA-09','Vocher na FlySpot','Bilet na koncert Metalici','Pluszowa Lalka Lola','Chińska podróbka HotWeels','Tabliczka Czekolady','Lizak o samku Coli','GTA 3','HotWeels','Pluszwoy Miś Ben','Call Of Duty Black Ops']).
+	nb_setval('CECHY',['age','cost','isDigital','isCooperative','dangereous','size','popularity','ageRestriction','availability']),
+	nb_setval('PK',['DND_5e_Podręcznik_Gracza','Kebab','Wakacje_na_Karaibach','FIFA-09','Vocher_na_FlySpot','Bilet_na_koncert_Metalici','Pluszowa_Lalka_Lola','Chinska_podróbka_HotWeels','Tabliczka_Czekolady','Lizak_o_samku_Coli','GTA_3','HotWeels','Pluszwoy_Mis_Ben','Call_Of_Duty_Black_Ops']).
 
 %twoży redukt dla konkretnej klasy
 makeReduktForClass(CLASS):-
