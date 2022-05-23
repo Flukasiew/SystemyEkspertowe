@@ -13,13 +13,13 @@ read_answers([Cost, Res, Availability, Age, Popularity, Dangereous, Size, Digita
 	read_cooperative(Cooperative).
 
 read_digital(Digital) :- 
-    format('~nCzy podarek ma być wirtualny?~n'),
+    format('~nCzy podarek ma byc wirtualny?~n'),
     tak_nie_list(Taknie_list),
 	print_variables(Taknie_list),
 	read(Digital).
 	
 read_cooperative(Cooperative) :- 
-    format('~nCzy do użytkowania podarek ma wymagać innych ludzi?~n'),
+    format('~nCzy do użytkowania podarek ma wymagac innych ludzi?~n'),
     tak_nie_list(Taknie_list),
 	print_variables(Taknie_list),
 	read(Cooperative).
