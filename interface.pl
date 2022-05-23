@@ -1,15 +1,29 @@
 :- module(interface, [read_answers/1, print_answers/1]).
 :- use_module(variables).
 
-read_answers([Cost, Res, Availability, Age, Popularity, Dangereous, Size]) :-
+read_answers([Cost, Res, Availability, Age, Popularity, Dangereous, Size, Digital, Cooperative]) :-
 	read_cost(Cost),
 	read_res(Res),
 	read_age(Age),
 	read_availability(Availability),
 	read_popularity(Popularity),
 	read_danger(Dangereous),
-	read_size(Size).
+	read_size(Size),
+	read_digital(Digital),
+	read_cooperative(Cooperative).
 
+read_digital(Digital) :- 
+    format('~nCzy podarek ma być wirtualny?~n'),
+    tak_nie_list(Taknie_list),
+	print_variables(Taknie_list),
+	read(Digital).
+	
+read_cooperative(Cooperative) :- 
+    format('~nCzy do użytkowania podarek ma wymagać innych ludzi?~n'),
+    tak_nie_list(Taknie_list),
+	print_variables(Taknie_list),
+	read(Cooperative).
+	
 read_res(Res) :- 
     format('~nJaki jest wiek obdarowywanej osoby?~n'),
     ageres_list(Res_list),
@@ -23,7 +37,7 @@ read_availability(Availability) :-
 	read(Availability).
 
 read_age(Age) :- 
-    format('~nJak bardzo dana osoba lubi retro podarki?~n'),
+    format('~nJak bardzo stary ma byc podarek?~n'),
     age_list(Age_list),
 	print_variables(Age_list),
 	read(Age).

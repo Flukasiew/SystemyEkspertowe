@@ -1,8 +1,18 @@
-:- module(app, [recommender_menu/0]).
+:- module(app, [main/0]).
 
 :- use_module(interface).
 :- use_module(recommendation).
 :- use_module(variables).
+:- use_module(expert_interface).
+
+main :-
+    format('~nPlease choose type of the program~n'),
+	print_variables([rekomendacja, ekspert]),
+	read(Opt),
+	(
+		Opt == rekomendacja -> recommender_menu;
+	    Opt == ekspert -> expert_menu
+	).
 
 recommender_menu :-
 	format('Rekomendacje podarkow~n'),
@@ -26,3 +36,4 @@ print_results([FactorWithPodarekPairsHead|FactorWithPodarekPairsTail]) :-
 
 get_key_and_value(KeyValuePair, Key, Value) :-
 	pairs_keys_values([KeyValuePair], [Key], [Value]).
+

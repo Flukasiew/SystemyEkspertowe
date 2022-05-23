@@ -9,11 +9,10 @@ recommend(Answers, FactorWithPodarekPairsResult) :-
         Factor-Podarek,
         calculate_podarek_recommendation_factor(Answers, Podarek, Factor),
         FactorWithPodarekPairs),
-    print_variables(FactorWithPodarekPairs),
     keysort(FactorWithPodarekPairs, SortedFactorWithPodarekPairs),
     reverse(SortedFactorWithPodarekPairs, FactorWithPodarekPairsResult).
 
-calculate_podarek_recommendation_factor([Cost, Res, Availability, Age, Popularity, Dangereous, Size], Podarek, Factor) :-
+calculate_podarek_recommendation_factor([Cost, Res, Availability, Age, Popularity, Dangereous, Size, Digital, Cooperative], Podarek, Factor) :-
     get_cost_factor(Cost, Podarek, CostFactor),
     get_ageres_factor(Res, Podarek, ResFactor),
     get_age_factor(Age, Podarek, AgeFactor),
@@ -21,6 +20,8 @@ calculate_podarek_recommendation_factor([Cost, Res, Availability, Age, Popularit
     get_availability_factor(Availability, Podarek, AvailabilityFactor),
     get_popularity_factor(Popularity, Podarek, PopularityFactor),
     get_dangereous_factor(Dangereous, Podarek, DangereousFactor),
+	get_digital_factor(Digital, Podarek, DigitalFactor),
+	get_cooperative_factor(Cooperative, Podarek, CooperativeFactor),
     RecommandationFactors = [
         CostFactor,
         ResFactor,
@@ -28,12 +29,24 @@ calculate_podarek_recommendation_factor([Cost, Res, Availability, Age, Popularit
         AgeFactor,
         AvailabilityFactor,
         PopularityFactor,
-        DangereousFactor
+        DangereousFactor,
+		DigitalFactor,
+		CooperativeFactor
     ],
     sum_list_elements(RecommandationFactors, RecommandationFactorsSum),
-    Factor is RecommandationFactorsSum / 7,
+    Factor is RecommandationFactorsSum / 9,
     true.
 
+get_digital_factor(Digital, Podarek, Factor) :-
+	map_taknie_to_taknie_factor(Digital, TargetFactor),
+	db:isDigital(Podarek, DigitalFactor),
+	Factor is 1 - abs(TargetFactor - DigitalFactor).
+	
+get_cooperative_factor(Cooperative, Podarek, Factor) :-
+	map_taknie_to_taknie_factor(Cooperative, TargetFactor),
+	db:isCooperative(Podarek, CooperativeFactor),
+	Factor is 1 - abs(TargetFactor - CooperativeFactor).
+	
 get_cost_factor(Cost, Podarek, Factor) :-
     map_cost_to_cost_factor(Cost, TargetFactor),
     cost_factor(Podarek, CostFactor),
